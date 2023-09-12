@@ -33,7 +33,7 @@
 
                 </div>
             </section>
-            <!-- -->
+            <!--Flexbox-->
             <section>
                 <div class="flex-interior">
                     <div class="flex-parent">
@@ -53,12 +53,53 @@
                     </div>
                 </div>
             </section>
-            <!-- -->
-            <section></section>
-            <!-- -->
-            <section></section>
-            <!-- -->
-            <section></section>
+            <!--Positioning-->
+            <section class="positioning-wrapper">
+                <div class="interior interior--positioning">
+                    <h1> Positioning Elements</h1>
+                    <div class="circle" style="right: 20px; top: 300px;"> </div>
+                    <div class="circle" style="left: 50px; bottom: 100px;"> </div>
+                    <div class="circle" style="right: 200px; bottom: 30px;"> </div>
+                    <div class="square" style="right: 20px; top: 300px;"> </div>
+                    <div class="square" style="right: 20px; top: 300px;"> </div>
+                    <div class="square" style="right: 20px; top: 300px;"> </div>
+                </div>
+            </section>
+           <!--Headers-->
+           <section>
+                <div class="interior">
+                    <h1> Highest level header(h1)</h1>
+                    <h2> Subsection of the header one (h2) </h2>
+                    <p> this is a paragraphs</p>
+                    <h3> Header three is a subsection of header two (h3) </h3>
+                    <h4> This is a subsection of the third header (h4) </h4>
+                    <p> This is a paragraph </p>
+                    <p> This is a paragraph </p>
+                </div>
+            </section>
+            <!--Simple Javascript-->
+            <section>
+                <div class="interior"> 
+                <h1> Simple Javascript</h1>
+                <script> 
+                    let count = O;
+
+                    function increaseCount(){
+                        count = count + 1;
+                        const countIndicator = document.querySelector(".count-indicator");
+                        return (countIndicator.innerHTML = count);
+                    }
+                    function decreaseCount(){
+                        count = count - 1;
+                        const countIndicator = document.querySelector(".count-indicator");
+                        return (countIndicator.innerHTML = count);
+                    }
+                </script>
+                <p> Count: <span class="count-indicator"> 0 </span></p>
+                <button onclick="increaseCount()"> Click to increase! </button>
+                <button onclick="decreaseCount()"> Click to decrease! </button>
+                </div>
+            </section>
         </main>
         <footer>
 

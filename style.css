@@ -1,4 +1,9 @@
 html,
+
+*{
+    box-sizing:border-box;
+}
+
 body{
     box-sizing: border-box;
     font-family: sans-serif;
@@ -7,17 +12,52 @@ body{
 
 }
 
-a{
-    color: black;
-}
 
 h1{
     font-size: 35px;
 }
 
+h2{
+    
+}
+
+h3{
+    
+}
 p{
     font-size: 20px;
 }
+
+header {
+    background-color: aqua;
+    padding:20px;
+}
+
+header nav {
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+header nav a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin: 0 10px;
+}
+
+header nav a:last-of-type{
+    margin-right: 0;
+}
+
+a{
+    color: black;
+}
+
 
 .section-wrapper{
     background-color: lightgreen;
@@ -26,8 +66,9 @@ p{
 
 .interior{
     background-color: lightpink;
-    border: 10px solid green;
-    margin: 40px;
+    border: 10px solid;
+    margin: 0 auto;
+    max-width: 900px;
     padding: 40px;
 }
 
@@ -42,13 +83,12 @@ p{
 
 .flex-parent{
     background-color: beige;
-    border: 5px solid brown;
+    border: 10px solid brown;
     flex-basis: 40%;
     flex-shrink: 0;
     display:flex;
     gap: 25px;
     padding: 25px;
-    height: 300px;
     width: 100%;
 }
 
@@ -62,16 +102,19 @@ p{
 }
 
 .flex-parent h1{
-    color:brown;
+    color:rgb(151, 18, 133);
 }
 
 .flex-child{
     background-color: cornsilk;
-    border:4px solid rgb(96, 0, 128);
+    border:2px solid rgb(187, 118, 211);
     flex-basis: 33%;
     min-height: 100px;
 }
 
+.flex-parent-stacked{
+    flex-direction: column;
+}
 .flex-child-big{
     align-items: center;
     display: flex;
@@ -81,3 +124,31 @@ p{
     max-width: 800 px;
 }
 
+.positioning-wrapper{
+    background-color: #cad7f1;
+    padding: 40px 20px;
+}
+
+.interior--positioning{
+    background-color: #85c4ff;
+    border-color:rgb(96, 0, 128);
+    position: relative;
+    min-height:600px;
+}
+
+.circle{
+    border-color: 5px #0e3f9e;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+.square{
+    background-color: #cad7f1;
+    border-color: 5px #0e3f9e;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+
+}
