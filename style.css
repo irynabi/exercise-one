@@ -17,13 +17,6 @@ h1{
     font-size: 35px;
 }
 
-h2{
-    
-}
-
-h3{
-    
-}
 p{
     font-size: 20px;
 }
@@ -133,19 +126,21 @@ a{
     background-color: #85c4ff;
     border-color:rgb(96, 0, 128);
     position: relative;
-    min-height:600px;
+    min-height:500px;
 }
 
 .circle{
-    border-color: 5px #0e3f9e;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    background-color:rgb(96, 0, 128);
+    border: 5px #0e3f9e;
+    height: 80px;
+    width: 80px;
     position: absolute;
+    border-radius: 50%;
+
 }
 
 .square{
-    background-color: #cad7f1;
+    background-color: rgb(96, 0, 128);
     border-color: 5px #0e3f9e;
     height: 80px;
     width: 80px;

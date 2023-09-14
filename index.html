@@ -57,18 +57,17 @@
             <section class="positioning-wrapper">
                 <div class="interior interior--positioning">
                     <h1> Positioning Elements</h1>
-                    <div class="circle" style="right: 20px; top: 300px;"> </div>
-                    <div class="circle" style="left: 50px; bottom: 100px;"> </div>
-                    <div class="circle" style="right: 200px; bottom: 30px;"> </div>
-                    <div class="square" style="right: 20px; top: 300px;"> </div>
-                    <div class="square" style="right: 20px; top: 300px;"> </div>
-                    <div class="square" style="right: 20px; top: 300px;"> </div>
+                    <div class="circle" style="right: 48px; top: 34px;"> </div>
+                    <div class="circle" style="right: 186px; bottom: 143px;"> </div>
+                    <div class="square" style="right: 56px; bottom: 48px;"> </div>
+                    <div class="square" style="right: 510px; bottom: 204px;"> </div>
+
                 </div>
             </section>
            <!--Headers-->
            <section>
                 <div class="interior">
-                    <h1> Highest level header(h1)</h1>
+                    <h1> Highest level header (h1)</h1>
                     <h2> Subsection of the header one (h2) </h2>
                     <p> this is a paragraphs</p>
                     <h3> Header three is a subsection of header two (h3) </h3>
@@ -80,30 +79,28 @@
             <!--Simple Javascript-->
             <section>
                 <div class="interior"> 
-                <h1> Simple Javascript</h1>
-                <script> 
-                    let count = O;
+                    <h1> Simple Javascript</h1>
+                    <script> 
+                        let count = 0;
 
-                    function increaseCount(){
-                        count = count + 1;
-                        const countIndicator = document.querySelector(".count-indicator");
-                        return (countIndicator.innerHTML = count);
-                    }
-                    function decreaseCount(){
-                        count = count - 1;
-                        const countIndicator = document.querySelector(".count-indicator");
-                        return (countIndicator.innerHTML = count);
-                    }
-                </script>
-                <p> Count: <span class="count-indicator"> 0 </span></p>
-                <button onclick="increaseCount()"> Click to increase! </button>
-                <button onclick="decreaseCount()"> Click to decrease! </button>
+                        function increaseCount(){
+                            count = count + 1;
+                            const countIndicator = document.querySelector(".count-indicator");
+                            return (countIndicator.innerHTML = count);
+                        }
+
+                        function decreaseCount(){
+                            count = count - 1;
+                            return (document.querySelector(".count-indicator").innerHTML = 
+                            count);
+                        }
+                    </script>
+                <p>Count:<span class="count-indicator">0</span></p>
+                <button onClick="increaseCount()">Click to increase!</button>
+                <button onClick="decreaseCount()">Click to decrease!</button>
                 </div>
             </section>
         </main>
-        <footer>
-
-
-        </footer>
+        <footer></footer>
     </body>
 </html>
